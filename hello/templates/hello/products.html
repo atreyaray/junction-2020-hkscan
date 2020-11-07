@@ -1,6 +1,6 @@
 {% extends "hello/base.html" %}
 {% block content %}
-<h1 style="color: #444444;">Data about this product:</h1>
+<h1 style="color: #444444;">Products available at your store:</h1>
 <br />
 {% for post in posts %}
 <h2 style="color: #444444;"> {{post.product_name}}</h2>
@@ -10,7 +10,7 @@
         <th></th>
     </tr>
     <tr>
-        <td ><a href="/pork" target="_blank"><img class="product-pic" style="height: 165px;
+        <td ><a href="/{{ post.type }}" target="_blank"><img class="product-pic" style="height: 165px;
             width: 165px;
             border: solid;
             border-radius: 2px;
@@ -19,8 +19,13 @@
         <td >
             <div style="margin-left: 15px;">
                 <p><b>Decription:</b> {{post.Type}}</p>
+<<<<<<< HEAD
+                <p><b>Recipe: </b> {{post.Recipe}}: <a href="{{ post.recipe_main }}" target="_blank"> {{post.recipe_name}}</a>.</p>
+                <p><b>Recommended price: </b> {{post.Price}}€</p>
+=======
                 <p><b>Recipe: </b> {{post.Recipe}}  <a href="{{ post.recipe_main }}" target="_blank"> {{post.recipe_name}}</a>.</p>
                 <p><b>Price: </b> {{post.Price}}€</p>
+>>>>>>> 62b125be28ebbf5d846d023e697a60a690398b0f
             </div>
         </td>
     </tr>

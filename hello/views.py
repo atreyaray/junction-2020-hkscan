@@ -10,14 +10,19 @@ posts = [
         'Recipe': 'Our favorite is crackling pork, you can find the recipe here',
         'RecipeLink': 'https://www.hk.fi/reseptit',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
+<<<<<<< HEAD
+        'Price' : '14.99',
+=======
         'Price' : '10',
+>>>>>>> 62b125be28ebbf5d846d023e697a60a690398b0f
         'recipe_name': 'crackling pork',
-        'content': '69420',
+        'content': '111',
         'date_posted': 'Nov 7 2020',
         'recipe_main': 'https://www.hk.fi/reseptit/resepti/crackling-pork-joulukinkku/'
 
     },
     {
+        'type': 'beef',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Beef)',
         'Type': 'succulent farm-grown Finnish beef tenderloin. We making a burger!.',
@@ -26,17 +31,18 @@ posts = [
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3437.jpg?c=system_1024x',
         'recipe_main': 'https://www.hk.fi/reseptit/resepti/original-burger/',
         'recipe_name' : 'original burger',
-        'content': '69420',
+        'content': '222',
         'date_posted': 'Nov 7 2020'
     },
     {
+        'type': 'chicken',
         'author': 'HK Scan',
         'product_name': 'Vegan Nuggets',
         'Type': 'the perfect fried snacks while making sustainable choices for the world',
         'Price': '7',
         'Recipe' : 'Eat them as is !',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/7856.jpg?c = system_1024x',
-        'content': '69420',
+        'content': '333',
         'date_posted': 'Nov 7 2020'
     }
     
@@ -71,6 +77,20 @@ def pork(request) :
         'title' : 'team stem boys'
     }
     return render(request, 'hello/pork.html',context)
+
+def beef(request) :
+    context = {
+        'posts' : posts,
+        'title' : 'team stem boys'
+    }
+    return render(request, 'hello/beef.html',context)
+
+def chicken(request) :
+    context = {
+        'posts' : posts,
+        'title' : 'team stem boys'
+    }
+    return render(request, 'hello/chicken.html',context)
 
 def products(request) :
     context = {
