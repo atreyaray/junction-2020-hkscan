@@ -40,4 +40,4 @@ def recipes(request) :
         'posts' : posts,
         'title' : 'team stem boys'
     }
-    return render(request, 'hello/recipes.html',context)
+    return render(request, 'hello/recipes.html', context)
