@@ -5,7 +5,7 @@ posts = [
     {
         'author': 'HK Scan',
         'title': 'Product:',
-        'product_name': 'Tenderloin Steak',
+        'product_name': 'Tenderloin Steak (Pork)',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
         'content': '69420',
         'date_posted': 'Nov 7 2020'
@@ -13,11 +13,19 @@ posts = [
     {
         'author': 'HK Scan',
         'title': 'Product:',
-        'product_name': 'Beef Tenderloin Steak',
+        'product_name': 'Tenderloin Steak (Beef)',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3437.jpg?c=system_1024x',
         'content': '69420',
         'date_posted': 'Nov 7 2020'
     },
+    {
+        'author': 'HK Scan',
+        'title': 'Product:',
+        'product_name': 'Vegan Nuggets',
+        'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/7856.jpg?c = system_1024x',
+        'content': '69420',
+        'date_posted': 'Nov 7 2020'
+    }
     
     # {
     #     'author': 'HK Scan',
@@ -50,3 +58,10 @@ def recipes(request) :
         'title' : 'team stem boys'
     }
     return render(request, 'hello/recipes.html',context)
+
+def products(request) :
+    context = {
+        'posts': posts,
+        'title': 'team stem boys'
+    }
+    return render(request, 'hello/products.html', context)
