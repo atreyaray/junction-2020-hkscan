@@ -78,3 +78,10 @@ def products(request) :
         'title': 'team stem boys'
     }
     return render(request, 'hello/products.html', context)
+
+def about(request) :
+    context ={
+        'posts' : posts,
+        'title': 'team stem boys'
+    }
+    return render(request, 'hello/about.html',context)
