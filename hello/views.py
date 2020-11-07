@@ -18,6 +18,7 @@ posts = [
 
     },
     {
+        'type': 'beef',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Beef)',
         'Type': 'succulent farm-grown Finnish beef tenderloin. We making a burger!.',
@@ -29,6 +30,7 @@ posts = [
         'date_posted': 'Nov 7 2020'
     },
     {
+        'type': 'chicken',
         'author': 'HK Scan',
         'product_name': 'Vegan Nuggets',
         'Type': 'the perfect fried snacks while making sustainable choices for the world',
@@ -69,6 +71,20 @@ def pork(request) :
         'title' : 'team stem boys'
     }
     return render(request, 'hello/pork.html',context)
+
+def beef(request) :
+    context = {
+        'posts' : posts,
+        'title' : 'team stem boys'
+    }
+    return render(request, 'hello/beef.html',context)
+
+def chicken(request) :
+    context = {
+        'posts' : posts,
+        'title' : 'team stem boys'
+    }
+    return render(request, 'hello/chicken.html',context)
 
 def products(request) :
     context = {
