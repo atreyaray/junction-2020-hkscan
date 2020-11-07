@@ -10,17 +10,18 @@
         <th></th>
     </tr>
     <tr>
-        <td><img class="product-pic" style="height: 165px;
+        <td ><img class="product-pic" style="height: 165px;
             width: 165px;
             border: solid;
             border-radius: 2px;
             border-color: #494949;" src="{{ post.media }}">
             <img /></td>
-        <td>
-            <p>Type: farm-grown meat</p>
-            <p>Type: aklkanwf</p>
-            <p>Type: aklkanwf</p>
-            <p>Type: aklkanwf</p>
+        <td >
+            <div style="margin-left: 15px;">
+                <p><b>Decription:</b> {{post.Type}}</p>
+                <p><b>Recipe: </b> {{post.Recipe}} : <a href="{{ post.recipe_main }}" target="_blank">crackling pork</a>.</p>
+                <p><b>Price: </b> {{post.Price}}€</p>
+            </div>
         </td>
     </tr>
     </br>
