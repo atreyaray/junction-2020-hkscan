@@ -1,10 +1,10 @@
 {% extends "hello/base.html" %}
 {% block content %}
-    <h1 style="color: #444444;">Data about this product:</h1>
+    <!-- <h1 style="color: #444444;">Data about this product:</h1> -->
     <br/>
     {% for post in posts %}
       <h2 style="color: #444444;">{{ post.title }} {{post.product_name}}</h2>
-      <table style="">
+      <table style="width: 500px;">
         <tr>
           <th></th>
           <th></th>
@@ -20,9 +20,9 @@
           <img/></td>
           <td>
             <div style="margin-left: 15px;">
-              <p><b>Type:</b> farm-grown meat</p>
-              <p><b>Flavour:</b> juicy as fuck</p>
-              <p><b>Color:</b> RED</p>
+              <p><b>Type:</b> succulent farm-grown Finnish pork tenderloin. We recommend roasting it.</p>
+              <p><b>Recipes:</b> Our favorite is <a href="{{ post.recipe_main }}" target="_blank">crackling pork</a>. You can find the full list of recipes <a  href="https://www.hk.fi/reseptit/" target="_blank">here</a>.</p>
+              <p><b>Recommended retail price:</b> RED</p>
             </div>
             
           </td>
@@ -31,7 +31,6 @@
           
         
         
-      
       
       <!-- <h2> {{ post.content }}</h2> -->
       <!-- <p>By {{ post.author }} on {{ post.date_posted }}</p> -->

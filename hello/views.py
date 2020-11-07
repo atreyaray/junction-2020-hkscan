@@ -3,12 +3,9 @@ from django.shortcuts import render
 
 posts = [
     {
-        'author': 'HK Scan',
-        'title': 'Product:',
         'product_name': 'Tenderloin Steak',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
-        'content': '69420',
-        'date_posted': 'Nov 7 2020'
+        'recipe_main': 'https://www.hk.fi/reseptit/resepti/crackling-pork-joulukinkku/'
     }
     # {
     #     'author': 'HK Scan',
