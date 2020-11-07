@@ -57,14 +57,14 @@ def hello(request):
         'posts': posts,
         'title': 'team STEM boys'
     }
-    return render(request, 'hello/home.html', context)
+    return render(request, 'hello/products.html', context)
 
-def recipes(request) :
+def pork(request) :
     context = {
         'posts' : posts,
         'title' : 'team stem boys'
     }
-    return render(request, 'hello/recipes.html',context)
+    return render(request, 'hello/pork.html',context)
 
 def products(request) :
     context = {
