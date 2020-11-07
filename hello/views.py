@@ -10,11 +10,8 @@ posts = [
         'Recipe': 'Our favorite is crackling pork, you can find the recipe here',
         'RecipeLink': 'https://www.hk.fi/reseptit',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
-<<<<<<< HEAD
         'Price' : '14.99',
-=======
-        'Price' : '10',
->>>>>>> 62b125be28ebbf5d846d023e697a60a690398b0f
+
         'recipe_name': 'crackling pork',
         'content': '111',
         'date_posted': 'Nov 7 2020',
