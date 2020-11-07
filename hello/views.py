@@ -3,10 +3,30 @@ from django.shortcuts import render
 
 posts = [
     {
-        'product_name': 'Tenderloin Steak',
+
+        'author': 'HK Scan',
+        'product_name': 'Tenderloin Steak (Pork)',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
+        'content': '69420',
+        'date_posted': 'Nov 7 2020',
         'recipe_main': 'https://www.hk.fi/reseptit/resepti/crackling-pork-joulukinkku/'
+
+    },
+    {
+        'author': 'HK Scan',
+        'product_name': 'Tenderloin Steak (Beef)',
+        'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3437.jpg?c=system_1024x',
+        'content': '69420',
+        'date_posted': 'Nov 7 2020'
+    },
+    {
+        'author': 'HK Scan',
+        'product_name': 'Vegan Nuggets',
+        'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/7856.jpg?c = system_1024x',
+        'content': '69420',
+        'date_posted': 'Nov 7 2020'
     }
+    
     # {
     #     'author': 'HK Scan',
     #     'title': 'Production location:',
@@ -37,4 +57,11 @@ def recipes(request) :
         'posts' : posts,
         'title' : 'team stem boys'
     }
-    return render(request, 'hello/recipes.html', context)
+    return render(request, 'hello/recipes.html',context)
+
+def products(request) :
+    context = {
+        'posts': posts,
+        'title': 'team stem boys'
+    }
+    return render(request, 'hello/products.html', context)
