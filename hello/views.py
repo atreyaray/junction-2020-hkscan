@@ -10,9 +10,9 @@ posts = [
         'Recipe': 'Our favorite is crackling pork, you can find the recipe here',
         'RecipeLink': 'https://www.hk.fi/reseptit',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
-        'Price' : '5',
+        'Price' : '14.99',
         'recipe_name': 'crackling pork',
-        'content': '69420',
+        'content': '111',
         'date_posted': 'Nov 7 2020',
         'recipe_main': 'https://www.hk.fi/reseptit/resepti/crackling-pork-joulukinkku/'
 
@@ -26,7 +26,7 @@ posts = [
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3437.jpg?c=system_1024x',
         'recipe_main': 'https://www.hk.fi/reseptit/resepti/original-burger/',
         'recipe_name' : 'original burger',
-        'content': '69420',
+        'content': '222',
         'date_posted': 'Nov 7 2020'
     },
     {
@@ -36,7 +36,7 @@ posts = [
         'Type': 'the perfect fried snacks while making sustainable choices for the world',
         'Recipe' : 'Eat them as is !',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/7856.jpg?c = system_1024x',
-        'content': '69420',
+        'content': '333',
         'date_posted': 'Nov 7 2020'
     }
     

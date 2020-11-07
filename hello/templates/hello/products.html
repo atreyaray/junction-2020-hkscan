@@ -1,6 +1,6 @@
 {% extends "hello/base.html" %}
 {% block content %}
-<h1 style="color: #444444;">Data about this product:</h1>
+<h1 style="color: #444444;">Products available at your store:</h1>
 <br />
 {% for post in posts %}
 <h2 style="color: #444444;"> {{post.product_name}}</h2>
@@ -19,8 +19,8 @@
         <td >
             <div style="margin-left: 15px;">
                 <p><b>Decription:</b> {{post.Type}}</p>
-                <p><b>Recipe: </b> {{post.Recipe}} : <a href="{{ post.recipe_main }}" target="_blank"> {{post.recipe_name}}</a>.</p>
-                <p><b>Price: </b> {{post.Price}}€</p>
+                <p><b>Recipe: </b> {{post.Recipe}}: <a href="{{ post.recipe_main }}" target="_blank"> {{post.recipe_name}}</a>.</p>
+                <p><b>Recommended price: </b> {{post.Price}}€</p>
             </div>
         </td>
     </tr>
