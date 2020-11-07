@@ -3,10 +3,10 @@ from django.shortcuts import render
 
 posts = [
     {
-        'type': 'pork',
+        'productType': 'pork',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Pork)',
-        'Type' : 'succulent farm-grown Finnish pork tenderloin. We recommend roasting it.',
+        'description' : 'succulent farm-grown Finnish pork tenderloin. We recommend roasting it.',
         'Recipe': 'Our favorite is crackling pork, you can find the recipe here',
         'RecipeLink': 'https://www.hk.fi/reseptit',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
@@ -18,10 +18,10 @@ posts = [
 
     },
     {
-        'type': 'beef',
+        'productType': 'beef',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Beef)',
-        'Type': 'succulent farm-grown Finnish beef tenderloin. We making a burger!.',
+        'description': 'succulent farm-grown Finnish beef tenderloin. We making a burger!.',
         'Recipe': 'We can back the classic burger, you can find the recipe here',
         'Price': '10',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3437.jpg?c=system_1024x',
@@ -31,10 +31,10 @@ posts = [
         'date_posted': 'Nov 7 2020'
     },
     {
-        'type': 'chicken',
+        'productType': 'chicken',
         'author': 'HK Scan',
         'product_name': 'Vegan Nuggets',
-        'Type': 'the perfect fried snacks while making sustainable choices for the world',
+        'description': 'the perfect fried snacks while making sustainable choices for the world',
         'Price': '7',
         'Recipe' : 'Eat them as is !',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/7856.jpg?c = system_1024x',
