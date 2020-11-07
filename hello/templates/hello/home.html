@@ -1,11 +1,55 @@
 {% extends "hello/base.html" %}
 {% block content %}
-    <h1>Our farm statistics </h1>
+    <h1 style="color: #444444;">Data about this product:</h1>
+    <br/>
     {% for post in posts %}
-      <h2>{{ post.title }}</h2>
-      <h2> {{ post.content }}</h2>
-      <p>By {{ post.author }} on {{ post.date_posted }}</p>
+      <h2 style="color: #444444;">{{ post.title }} {{post.product_name}}</h2>
+      <table style="">
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><img class="product-pic" style=
+            "height: 165px;
+            width: 165px;
+            border: solid;
+            border-radius: 2px;
+            border-color: #494949;"
+          src="{{ post.media }}">
+          <img/></td>
+          <td>
+            <p>Type: farm-grown meat</p>
+            <p>Type: aklkanwf</p>
+            <p>Type: aklkanwf</p>
+            <p>Type: aklkanwf</p>
+          </td>
+        </tr>
+      </table>
+          
+        
+        
+      
+      
+      <!-- <h2> {{ post.content }}</h2> -->
+      <!-- <p>By {{ post.author }} on {{ post.date_posted }}</p> -->
     {% endfor %}
+    <!-- <h2>Contribution of each factor to CO2 footprints:</h2> -->
+    </br>
+    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/17.embed"></iframe>    </br>
+    <!-- <h2>Pork Water Use per farm: </h2> -->
+    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/25.embed"></iframe>
+    </br>
+    <!-- <h2>Beef Water Use:</h2> -->
+    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/23.embed"></iframe>
+    </br>
+    <!-- <h2>Broiler Water Use:</h2> -->
+    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/20.embed"></iframe>
+    </br>
+    <iframe style="zoom: 0.5" width="1200" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/30.embed"></iframe>
+    </br>
+    <iframe style="zoom: 0.5" width="1200" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/32.embed"></iframe>
+    </br>
     <!-- <br/>
     <br/>
     <h2>Section 2: Very Relevant Cow statistics: </h2>

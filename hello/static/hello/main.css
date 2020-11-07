@@ -12,8 +12,16 @@ ul {
   margin: 0;
 }
 
+.product-pic {
+  height: 165px;
+  width: 165px;
+  border: solid;
+  border-radius: 2px;
+  border-color: #494949;
+}
+
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #1e87d1;
 }
 
 .site-header .navbar-nav .nav-link {
