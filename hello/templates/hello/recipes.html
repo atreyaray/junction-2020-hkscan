@@ -1,0 +1,28 @@
+{% extends "hello/base.html" %}
+{% block content %}
+<h1 style="color: #444444;">Data about this product:</h1>
+<br />
+{% for post in posts %}
+<h2 style="color: #444444;">{{ post.title }} {{post.product_name}}</h2>
+<table style="">
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><img class="product-pic" style="height: 165px;
+            width: 165px;
+            border: solid;
+            border-radius: 2px;
+            border-color: #494949;" src="{{ post.media }}">
+            <img /></td>
+        <td>
+            <p>Type: farm-grown meat</p>
+            <p>Type: aklkanwf</p>
+            <p>Type: aklkanwf</p>
+            <p>Type: aklkanwf</p>
+        </td>
+    </tr>
+</table>
+{% endfor %}
+{% endblock content %}

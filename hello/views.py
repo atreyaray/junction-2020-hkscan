@@ -33,5 +33,11 @@ def hello(request):
         'posts': posts,
         'title': 'team STEM boys'
     }
-
     return render(request, 'hello/home.html', context)
+
+def recipes(request) :
+    context = {
+        'posts' : posts,
+        'title' : 'team stem boys'
+    }
+    return render(request, 'hello/recipes.html',context)
