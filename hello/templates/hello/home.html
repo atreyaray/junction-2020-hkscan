@@ -3,69 +3,78 @@
     <!-- <h1 style="color: #444444;">Data about this product:</h1> -->
     <br/>
     {% for post in posts %}
-
-      <h2 style="color: #444444;">{{post.product_name}}</h2>
-      <table style="">
-        <tr>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <td><img class="product-pic" style=
-            "height: 165px;
-            width: 165px;
-            border: solid;
-            border-radius: 2px;
-            border-color: #494949;"
-          src="{{ post.media }}">
-          <img/></td>
-          <td>
-            <div style="margin-left: 15px;">
-              <p><b>Type:</b> succulent farm-grown Finnish pork tenderloin. We recommend roasting it.</p>
-              <p><b>Recipes:</b> Our favorite is <a href="{{ post.recipe_main }}" target="_blank">crackling pork</a>. You can find the full list of recipes <a  href="https://www.hk.fi/reseptit/" target="_blank">here</a>.</p>
-              <p><b>Recommended retail price:</b> RED</p>
-            </div>
-            
-          </td>
-        </tr>
-      </table>
-          
-        
-        
-      
+      {%  if post.type == "pork" %}
+        <h2 style="color: #444444;">{{post.product_name}}</h2>
+        <table style="width: 500px;">
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td><img class="product-pic" style=
+              "height: 165px;
+              width: 165px;
+              border: solid;
+              border-radius: 2px;
+              border-color: #494949;"
+            src="{{ post.media }}">
+            <img/></td>
+            <td>
+              <div style="margin-left: 15px;">
+                <p><b>Description:</b> succulent farm-grown Finnish pork tenderloin. We recommend roasting it.</p>
+                <p><b>Recipes:</b> Our favorite is <a href="{{ post.recipe_main }}" target="_blank">crackling pork</a>. You can find the full list of recipes <a  href="https://www.hk.fi/reseptit/" target="_blank">here</a>.</p>
+                <p><b>Mass:</b> 650g</p>
+              </div>
+              
+            </td>
+          </tr>
+        </table>
+      {% endif %}   
       <!-- <h2> {{ post.content }}</h2> -->
       <!-- <p>By {{ post.author }} on {{ post.date_posted }}</p> -->
     {% endfor %}
+    
     <hr style="width:60%;text-align:left;margin-left:0">
     </br>
-    <h2>Where can I use this MEAT:</h2>
+    <h2>Product facts:</h2>
     <ul>
-      <li>in a pie</li>
-      <li>grill it idk</li>
+      <li>100% finnish-made</li>
+      <li>ethic</li>
       <li>somewhere else</li>
       <li>and elsewhere</li>
-      <li>if we're nice we're even going to put links here</li>
     </ul>
     </br>
     <hr style="width:60%;text-align:left;margin-left:0">
     </br>
+    <h2>Product origin:</h2>
+    <p style="width: 500px;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    </br>
+    <hr style="width:60%;text-align:left;margin-left:0">
+    </br>
     <h2>Sustainability information:</h2>
-    <!-- <h2>Contribution of each factor to CO2 footprints:</h2> -->
     </br>
-    <iframe style="zoom: 0.45" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/17.embed"></iframe>    </br>
-    <!-- <h2>Pork Water Use per farm: </h2> -->
-    <iframe style="zoom: 0.45" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/25.embed"></iframe>
+
+    <h5>Sexy 3D Surface Graph:</h5>
+    <p style="width: 500px;">The farm this product was produced on has contributed 16.8% of the total CO2 produced by the production, which is n less than average.</p>
+    <iframe style="zoom: 0.45" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/45.embed"></iframe>
+
+    <h5>Contribution of each factor to CO2 footprints:</h5>
+    <p style="width: 500px;">The farm this product was produced on has contributed 16.8% of the total CO2 produced by the production, which is n less than average.</p>
+    <iframe style="zoom: 0.45" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/25.embed"></iframe> 
     </br>
-    <!-- <h2>Beef Water Use:</h2>
-    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/23.embed"></iframe>
+
+    <h5>Average CO2 emission of countries for pork:</h5>
+    <p style="width: 500px;">The farm this product was produced on has contributed 16.8% of the total CO2 produced by the production, which is n less than average.</p>
+    <iframe style="zoom: 0.45" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/40.embed"></iframe>
+    
+    
+
+
+    
     </br>
-    <h2>Broiler Water Use:</h2> 
-    <iframe style="zoom: 0.5" width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/20.embed"></iframe>
-    </br> -->
-    <!-- <iframe style="zoom: 0.45" width="1200" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/30.embed"></iframe>
-    </br> 
-    <iframe style="zoom: 0.45" width="1200" height="800" frameborder="0" scrolling="no" src="//plotly.com/~tuantnguyen/32.embed"></iframe>
-    </br> -->
+
 
 {% endblock content %}
 

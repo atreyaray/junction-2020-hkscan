@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 posts = [
     {
-
+        'type': 'pork',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Pork)',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
