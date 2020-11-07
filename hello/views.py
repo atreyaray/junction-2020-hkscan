@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 posts = [
     {
-
+        'type': 'pork',
         'author': 'HK Scan',
         'product_name': 'Tenderloin Steak (Pork)',
         'Type' : 'succulent farm-grown Finnish pork tenderloin. We recommend roasting it.',
