@@ -9,7 +9,7 @@ class Product(models.Model):
     Recipe = models.TextField()
     RecipeLink = models.TextField()
     media = models.TextField()
-    Price = models.DecimalField(decimal_places=4, max_digits=100)
+    Price = models.DecimalField(decimal_places=2, max_digits=100)
     recipe_name = models.CharField(max_length=200)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
