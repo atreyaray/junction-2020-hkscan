@@ -11,7 +11,6 @@ posts = [
         'RecipeLink': 'https://www.hk.fi/reseptit',
         'media': 'https://hkruokatalo.studio.crasman.fi/pub/Kuvat/Tuotekuvat2/3661.jpg?c=system_1024x',
         'Price' : '14.99',
-
         'recipe_name': 'crackling pork',
         'content': '111',
         'date_posted': 'Nov 7 2020',
@@ -95,3 +94,10 @@ def products(request) :
         'title': 'team stem boys'
     }
     return render(request, 'hello/products.html', context)
+
+def about(request) :
+    context ={
+        'posts' : posts,
+        'title': 'team stem boys'
+    }
+    return render(request, 'hello/about.html',context)
